@@ -1,0 +1,412 @@
+* {
+	padding: 0;
+	margin:  0;
+	box-sizing:  border-box;
+}
+
+body {
+	font-family: 'Hind Siliguri', sans-serif;;
+}
+
+.wrapper {
+	display: flex;
+	min-height: 100%;
+	overflow: hidden;
+	flex-direction: column;
+}
+
+.header {
+	width: 100%;
+	background-color: #1E3333;
+}
+
+.container {
+	max-width: 1100px;
+	margin: 0 auto;
+	padding: 0 15px;
+	z-index: 2;
+}
+
+.head_row {
+	display: flex;
+	height: 80px;
+	justify-content: space-between;
+}
+
+.head_row .logo {
+	width: 25%;
+	height: 80px;
+	line-height: 80px;
+}
+
+.head_row .logo h1 {
+	color: white;
+	font-weight: 600;
+	font-size: 32px;
+}
+
+.burger_icon {
+	position: relative;
+	margin:  auto 0;
+	width: 50px;
+	height: 30px;
+	cursor: pointer;
+	display: none;
+}
+
+.burger_icon span,
+.burger_icon::before,
+.burger_icon::after {
+	left: 0;
+	position: absolute;
+	height: 10%;
+	width: 100%;
+	transition: all 0.3s ease 0;
+	background-color: #fff;
+}
+
+.burger_icon::before,
+.burger_icon::after {
+	content: "";
+}
+
+.burger_icon::before {
+	top: 0;
+}
+
+.burger_icon::after {
+	bottom: 0;
+}
+
+.burger_icon span {
+	top: 50%;
+	transform: scale(1) translate(0px, -50%);
+}
+
+.head_row .menu {
+	width: 75%;
+	height: 80px;
+	text-align: right;
+	line-height: 80px;
+}
+
+.head_row .menu nav ul {
+	list-style-type: none;
+}
+
+.head_row .menu nav ul li {
+	display: inline;
+	padding: 0 10px;
+}
+
+.head_row .menu nav ul li a {
+	color: white;
+	font-size: 20px;
+	font-weight: 600;
+	text-decoration: none;
+	padding: 20px;
+	transition: 0.5s;
+}
+
+.head_row .menu nav ul li a:hover {
+	background-color: #365D5D;
+	color: #FF9F2D;
+	transition: 0.5s;
+}
+
+.saidbar {
+	width: 100%;
+	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../img/charencavan.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+
+.bar_row {
+	display: flex;
+	min-height: 500px;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 30px;
+}
+
+.bar_row .bar_text {
+	width: 50%;
+	min-height: 300px;
+	color: white;
+}
+
+.bar_row .bar_text h1 {
+	font-size: 50px;
+	font-weight: 600;
+}
+
+.bar_row .bar_text p {
+	font-size: 18px;
+	font-weight: 600;
+	margin-top: 15px;
+	margin-bottom: 30px;
+}
+
+.bar_row .bar_text a {
+	padding: 8px 25px;
+	background-color: #FD8900;
+	color: white;
+	border: none;
+	border-radius: 4px;
+	text-decoration: none;
+	font-size: 17px;
+	font-weight: 600;
+	cursor: pointer;
+	transition: 0.5s;
+}
+
+.bar_row .bar_text a:hover {
+	box-shadow: 0 0 20px #FF910F;
+	transition: 0.5s;
+}
+
+.main{
+	width: 100%;
+}
+
+.main_row {
+	min-height: 400px;
+	display: flex;
+}
+
+.main_row .image {
+	width: 50%;
+	min-height: 400px;
+	background-image: url('../img/saidbar.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: left;
+}
+
+.main_row .body {
+	display: flex;
+	justify-content: center;
+	width: 50%;
+	min-height: 300px;
+	background-color: #F8F8F8;
+	
+}
+
+.body .text {
+	width: 70%;
+	min-height: 300px;
+	padding: 20px;
+	margin-bottom: 20px;
+}
+
+.body .text h1{
+	font-size: 30px;
+	font-weight: 600;
+	margin-top: 20px;
+	margin-bottom: 15px;
+}
+
+.body .text p	{
+	font-size: 18px;
+	line-height: 25px;
+	font-weight: 500;
+	margin-bottom: 40px;
+}
+
+.body .text a {
+	border: none;
+	border-radius: 4px;
+	padding: 10px 25px;
+	background-color: #1E3333;
+	color: white;
+	text-decoration: none;
+	font-size: 16px;
+	font-weight: 600;
+	transition: 0.5s;
+}
+
+.body .text a:hover {
+	background-color: #FF9F2D;
+	color: white;
+	transition: 0.5s;
+}
+
+.block {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 50%;
+	min-height: 300px;
+	background-color: white;
+}
+
+.block:nth-child(2) {
+	background-color: #f7c08a;
+}
+
+.block .info {
+	width: 80%;
+	min-height: 300px;
+	padding: 20px;
+	margin: 20px 0;
+	text-align: center;
+}
+
+.block .info img {
+	width: 100px;
+	height: 80px;
+	margin: 0 auto;
+}
+
+.block .info h1 {
+	font-weight: 600;
+	font-size: 30px;
+}
+
+.block .info p {
+	font-weight: 600;
+	font-size: 17px;
+	margin-top: 20px;
+	line-height: 30px;
+}
+
+.footer {
+	width: 100%;
+	height: 80px;
+	line-height: 80px;
+	background-color: #1E3333;
+}
+
+.footer h1 {
+	text-align: center;
+	font-size: 17px;
+	font-weight: 600;
+	color: white;
+}
+
+.contact_row {
+	width: 100%;
+	min-height: 400px;
+	margin-bottom: 65px;
+}
+
+.contact_row h1 {
+	font-size: 45px;
+	font-weight: 600;
+	margin-top: 30px;
+}
+
+.contact_row input:not(input[type = 'submit']) {
+	width: 100%;
+	padding: 10px;
+	border: 3px solid #E7E7E7;
+	margin-top: 30px;
+	display: inline;
+	outline: none;
+	font-weight: 600;
+	transition: 0.5s;
+}
+
+.contact_row input:not(input[type = 'submit']):focus {
+	border-color: #1E3333;
+	transition: 0.5s;
+}
+
+.contact_row textarea {
+	width: 100%;
+	height: 150px;
+	border: 3px solid #E7E7E7;
+	padding: 10px 15px;
+	margin-top: 30px;
+	display: block;
+	outline: none;
+	font-weight: 600;
+	transition: 0.5s;
+}
+
+.contact_row textarea:focus {
+	border-color: #1E3333;
+	transition: 0.5s;
+}
+
+.contact_row input[type = 'submit'] {
+	width: 120px;
+	border: none;
+	border-radius: 2px;
+	background-color: #1E3333;
+	padding: 10px 20px;
+	color: white;
+	font-size: 16px;
+	font-weight: 600;
+	margin-top: 30px;
+	display: block;
+	cursor: pointer;
+	transition: 0.5s;
+}
+
+.contact_row input[type = 'submit']:hover {
+	box-shadow: 0 0 20px #1E3333;
+	transition: 0.5s;
+}
+
+.about_row {
+	width: 100%;
+}
+
+.about_row h1 {
+	font-size: 60px;
+	text-align: center;
+	margin-top: 20px;
+	font-weight: 600;
+}
+
+.about_row #block {
+	display: flex;
+	flex-direction: column;
+	margin: 50px 0;
+}
+
+#block .item {
+	width: 100%;
+	margin-top: 20px;
+	padding: 15px;
+	min-height: 220px;
+	display: flex;
+}
+
+#block .item .text {
+	width: 50%;
+}
+ 
+#block .item .text h2 {
+	font-size: 40px;
+	font-weight: 600;
+	margin-bottom: 10px;
+}
+
+#block .item .text p {
+	font-size: 17px;
+	line-height: 30px;
+}
+
+#block .item .image {
+	width: 50%;
+	min-height: 200px;
+}
+
+#block .item .image img {
+	width: 70%;
+	height: 100%;
+	border: 2px inset black;
+	float: left;
+	border-radius: 2px;
+	transform: rotate(5deg);
+	transition: 0.5s;
+	cursor: pointer;
+}
+
+#block .item .image img:hover {
+	transform: rotate(0deg);
+	transition: 0.5s;
+}
